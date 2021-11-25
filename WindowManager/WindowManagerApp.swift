@@ -35,7 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         
         if let MenuButton = statusItem?.button {
-            MenuButton.image = NSImage(systemSymbolName: "hammer", accessibilityDescription: nil)
+            MenuButton.image = NSImage(named: "window")
             MenuButton.action = #selector(menuButtonAction)
         }
     }
